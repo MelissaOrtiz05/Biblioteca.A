@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactenos</title>
+  <script src="../js/js.js"></script>
+  <script src="../js2/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+</head>
+
+<body onload="cargarD()">
+  <img src="../img/1.jpg" class="rounded mx-auto d-block img-fluid img-rounded" width="100%">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="alquilerLibros.html">Alquiler de libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comprarLibro.html">Compra de libro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contactenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html" id="iniciar">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" onclick="cerrar()" id="cerrarSesion">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <br>
+
+    <h4 class="text-end" id="nombreU"></h4>
+    <br>
+    <br>
+    <h1 class="text-center text-info">Contactenos</h1><br>
+
+    <p class="parrafo">Conoce todo acerca de nuestra ubicación, horarios de atención y datos de contacto para que
+      puedas
+      realizar todas tus solicitudes y trámites. Comunícate con nosotros para conocer acerca de las diferentes
+      áreas
+      de la <b>Biblioteca Nacional</b> y cómo consultar cualquier <i>materia de investigación, autor o tema</i>.​
+      ​
+    </p><br>
+    <form>
+
+      <div class="me-5">
+        <div class="row">
+
+          <div class="col-lg-6  col-md-6 col-sm-6 col-xl-6 col-xs-6 ">
+            <label>Id</label><br>
+            <input type="number" name="id" id="txtid" class="form-control">
+            <br>
+            <label>Nombre</label><br>
+            <input type="text" name="nombre" id="txtnombre" class="form-control">
+            <br>
+            <label>Primer apellido</label><br>
+            <input type="text" id="txtpApellido" name="pApellido" class="form-control"></td>
+            <br>
+            <label>Segundo apellido</label><br>
+            <input type="text" id="txtsApellido" name="sApellido" class="form-control">
+            <br>
+
+           
+          
+            <label>Seleccione el tipo de libro de sus gustos</label><br>
+            <select id="opcion" name="opcion" class="form-control">
+              <option value="Terror">Terror</option>
+              <option value="Romance">Romance</option>
+              <option value="Suspenso">Suspenso</option>
+              <option value="Drama">Drama</option>
+              <option value="Ficción">Ficción</option>
+              <option value="Infantil">Infantil</option>
+            </select>
+            <br>
+            <label>Motivo por el cual nos contacta</label> <br><br>
+            <input type="radio" id="precios" name="motivoCons" value="precios"> Consultar precios <br>
+            <input type="radio" id="consultarLi" name="motivoCons" value="consultarLi"> Consultar libro
+            <br><input type="radio" id="consultarCom" name="motivoCons" value="consultarCom"> Consultar
+            compra
+            de libros<br>
+
+            <input type="radio" id="consultarAlq" name="motivoCons" value="consultarAlq"> Consultar
+            alquiler
+            de libros
+
+          </div>
+
+
+          <div class="col-lg-6  col-md-6 col-sm-6 col-xl-6 col-xs-6 ">
+            <label>Correo</label><br>
+            <input type="email" id="txtCorreo" name="correo" class="form-control">
+            <br>
+           
+            
+
+
+            <label>Fecha de nacimiento</label><br>
+            <input type="date" id="dateFecha" name="fechaNac" class="form-control">
+            <br>
+            <label>Teléfono</label><br><input type="text" id="txtTelefono" class="form-control" name="telefono">
+
+            <br>
+            <label>Edad</label><br>
+            <input type="number" id="txtEdad" name="edad" class="form-control" max="99" min="0">
+            <br>
+            <label>Sexo</label><br>
+            <input type="radio" id="F" name="sexo" value="F"> Femenino
+            <input type="radio" id="M" name="sexo" value="M"> Masculino
+          </div>
+        </div>
+
+
+        <br>
+        <div class="text-center">
+          <input type="button" class="btn btn-dark mt-3 me-3 pe-3" onclick="guardarCont()" name="guardar" value=Guardar>
+          <!--          <input type="button" class="btn btn-dark " onclick="editarContacto()" name="editar" value="editar------">
+    --> <input type="button" class="btn btn-dark  mt-3 me-3 pe-3" onclick="editarC()" name="editar" value="Editar">
+
+
+          <input type="button" class="btn btn-dark mt-3 me-3  pe-3" onclick="mostrarTabla()" name="mostrar" value=Mostrar.>
+
+          <input type="button" class="btn btn-dark mt-3 me-3  pe-3" onclick="eliminarItem()" name="Eliminar" value=Borrar >
+
+        </div>
+      </div>
+
+    </form>
+    <br><br><br>
+    <div id="divTabla"></div>
+    <div class="table-responsive">
+      <div id="tabla_datos ">
+        <table class=" table table-bordered  table-striped" id="listp">
+          <tr>
+            <th class="fila">Id</th>
+            <th class="fila">Nombre</th>
+            <th class="fila">Apellido</th>
+            <th class="fila">2º Apellido</th>
+            <th class="fila">Correo</th>
+            <th class="fila">Fecha de nacimiento</th>
+            <th class="fila">Teléfono</th>
+            <th class="fila">Tipo de libro</th>
+            <th class="fila">Motivo de contacto</th>
+            <th class="fila">Género</th>
+
+          </tr>
+          <tr>
+          </tr>
+          <tbody id="elementos">
+
+          </tbody>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+    <br><br>
+    <br>
+    <h1 class="text-center mb-5 text-info">Ubicanos</h1>
+    <div class="row">
+      <div class="col-lg-4  col-md-4 col-sm-6 col-xl-6 ">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9091570116625!2d-74.07054476804134!3d4.610279814962001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99990401eeb1%3A0x7c34b6d589ea7b9!2sBiblioteca%20Nacional%20De%20Colombia!5e0!3m2!1ses-419!2sco!4v1612292425615!5m2!1ses-419!2sco"
+          class="h-100  w-100" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+
+      <div class="col-lg-6  col-md-6 col-sm-6 col-xl-6 d-none d-sm-block ">
+        <img src="../img/index4.jpg" class="img-fluid w-100 h-100 ">
+        <!--style="width:700; height:450;"-->
+        <p class="text-center mt-5"> <i> serviciosbnc@bibliotecanacional.gov.co</i></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="bg-dark text-white text-center mt-5">
+    <br><br>
+    BIBLIOTECA NACIONAL<br><br>
+    Dirección: Calle 24 5-60 <br>
+    Horario de Atención: Lunes/Sábados 8 am - 6 pm
+    <br><br>
+  </footer>
+</body>
+
+</html>

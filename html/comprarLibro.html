@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Libros</title>
+    <script src="../js/js.js"></script>
+    <script src="../js2/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+
+<body onload="cargarD()">
+    <!--ENCABEZADO-->
+    <img src="../img/1.jpg" class="rounded mx-auto d-block img-fluid img-rounded" width="100%">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alquilerLibros.html">Alquiler de libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprarLibro.html">Compra de libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="iniciar">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="cerrar()" id="cerrarSesion">Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <br>
+        <h4 class="text-end" id="nombreU"></h4>
+        <h1 class="text-center mb-5 text-info">¿Por qué comprar en la Biblioteca Nacional?</h1>
+
+        <ul>
+            <li>Los mejores precios y ofertas</li><br>
+            <li>Rápido y económico servicio de entrega</li><br>
+            <li>Fácil y 100% segura compra de libros</li><br>
+            <li>Fácil y rápido cambio de libros</li><br>
+            <li>Recibe en casa tus libros</li><br>
+        </ul>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xl-12 col-12 d-none d-sm-block">
+
+                <p class="text-justify">Consulta las últimas novedades en libros de todos los géneros. Encuentra la
+                    nueva novela
+                    que
+                    estás buscando para leer y descubre los últimos lanzamientos y publicaciones de libros. </p><br>
+            </div>
+        </div>
+        <div class="table-responsive">
+
+            <table class="table-bordered text-center">
+                <h1 class="text-center text-info">¿Cómo comprar tus libros favoritos?</h1>
+                <br><br>
+                <tr>
+
+                    <td class="" rowspan="2">
+                        <i>Pasos:</i>
+                    </td>
+                    <td class="" colspan="4">
+                        <b>Busca el libro que quieres comprar en nuestra librería virtual.</b>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="">
+                        <b>1. Baja.</b> <br>
+                        <!--  Deslizandote hacia abajo prodras encontrar un formulario para diligenciar.-->
+                        <br><br>
+                        <img src="../img/img1.png" class="img-fluid w-50">
+                    </td>
+                    <td class="">
+                        <b>2 - Llena el formulario.</b> <br>
+                        <!--   Ingresa todos los datos correspondientes, para la compra de tu libro.-->
+                        <br>
+                        <img src="../img/Img2.png" class="img-fluid w-25">
+                    </td>
+                    <td class="">
+                        <b>3 - Confirma tu Compra.</b> <br>
+                        <!--   Haz click en enviar, para confirmar y generar tu bauche.-->
+                        <br>
+                        <img src="../img/img3.webp" class="img-fluid w-50">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+        <p></p>
+        <p class="text-justify">Asi mismo, también puedes llamarnos y pedirnos lo que quieras por teléfono. Quizá sea
+            más
+            fácil y
+            agradable porque puedes preguntar y encargar. Puedes hacernos un ingreso o transferencia o darnos un número
+            de
+            tarjeta. Ademas, puedes acercarte a la sede principal de la <b>Biblioteca Nacional</b>, para conocer donde
+            se
+            encuentra ubicada o a que número llamar da <a href="contactenos.html">click aqui</a>. <br><br>
+            Recuerda seguir los protocolos de bioseguridad si te acercaras a la biblioteca.</p><br><br>
+        <h2 class="text-info"><i><b>Formulario</b></i></h2>
+        <!--Formulario y Maps-->
+        <div class="row">
+            <div class="col-lg-3  col-md-3 col-sm-3 col-xl-3 col-xs-6 ">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                <br>
+                <label for="nombre">Apellido</label><br>
+                <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellido">
+                <br>
+                <label for="cedula">Cédula</label><br>
+                <input type="number" name="cedula" id="cedula" class="form-control" placeholder="Cedula">
+                <br>
+                <label for="fechadenacimiento">Fecha de Nacimiento</label><br>
+                <input type="date" name="fechadenacimiento" class="form-control" id="fechadenacimiento"
+                    class="tamanocF">
+                <br>
+                <label for="email">Correo Electrónico</label><br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Correo Electronico">
+                <br>
+                <label for="clave">Contraseña</label><br>
+                <input type="password" name="clave" id="clave" class="form-control" placeholder="Clave" min="6"
+                    max="15">
+                <br>
+                <label for="celular">Celular</label><br>
+                <input type="number" name="celular" id="Celular" class="form-control" placeholder="Celular">
+                <br>
+            </div>
+
+
+            <div class="col-lg-3   col-md-3 col-sm-3 col-xl-3 col-xs-6 ">
+                <label for="foto">Foto Perfil</label><br>
+                <input type="file" name="foto" id="foto" placeholder="Foto" class="form-control">
+                <br>
+                <label for="nombredellibro">Nombre del Libro</label><br>
+                <input type="text" name="nombredellibro" id="nombredellibro" placeholder="Nombre" class="form-control">
+                <br>
+                <label for="categoriadellibro">Categoria del Libro</label><br>
+                <input type="text" name="categoriadellibro" id="categoriadellibro" placeholder="Categoria"
+                    class="form-control">
+                <br>
+                <label for="ciudad">Ciudad</label><br>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" class="form-control">
+                <br>
+                <label for="barrio">Barrio</label><br>
+                <input type="text" name="barrio" id="barrio" placeholder="Barrio" class="form-control">
+                <br>
+                <label for="direccion">Dirección</label><br>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion" class="form-control">
+                <br><br>
+
+                <input type="button" class="btn btn-dark" name="enviar" value="Enviar" id="">
+                <input type="button" class="btn btn-dark" name="limpiar" value="Limpiar" id="">
+
+            </div>
+            <div class="col-lg-6   col-md-6 col-sm-6 col-xl-6 d-none d-sm-block ">
+                <img src="../img/img4.jpg" class="rounded mx-auto d-block img-fluid mt-5" width="500px">
+
+            </div>
+        </div>
+
+
+        <hr width="80%">
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12 col-xl-12 col-xs-12 ">
+
+                <p class="text-justify">Una vez envies los datos del formulario de la <b>Biblioteca Nacional</b> (la
+                    cual reúne
+                    todo el
+                    universo literario y su objetivo es ser el punto de encuentro entre autores y lectores) la página te
+                    generará un
+                    baucher el cual servira para realiza tu pago en la misma biblioteca o en un punto en especifico. Una
+                    vez
+                    realizado el pago podras acercarte a buscar tú libro</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12   col-md-12 col-sm-12 col-xl-12 d-none d-sm-block ">
+
+                <p class="text-justify">Nuestro propósito día a día es dar a nuestros clientes un mejor servicio a
+                    través de la
+                    atención
+                    personalizada, asesoría en la compra y uso de productos por parte de nuestro personal calificado y
+                    capacitado
+                    permanentemente. Todo esto, sumado a la facilidad de poder encontrar todas las variedades de libros
+                    en un
+                    solo
+                    lugar. Por lo tanto, realizamos envios a todo el país, para así estar cerca de nuestros clientes.
+                    <br><br>
+
+                    Para alcanzar la excelencia en el servicio y generar espacios cómodos y confortables construimos
+                    mundos
+                    infantiles, donde niños y niñas viven experiencias fascinantes, al tiempo que desarrollan y afianzan
+                    el
+                    hábito
+                    de la lectura.
+            </div>
+        </div>
+
+
+        </p>
+
+        <!--Videos Recomendados-->
+        <div class=" text-center">
+            <marquee behavior="" direction="right" class="mb-5 mt-5 text-info"><i><b>Videos Recomendados</b></i></marquee>
+
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4">
+                    <iframe width="330px" height="200px" src="https://www.youtube.com/embed/f1NfcDFAEGI" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4  col-xs-4">
+                    <iframe width="330px" height="200px" src="https://www.youtube.com/embed/t0aez1AVeqs" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4  col-xs-4">
+                    <iframe width="330px" height="200px" src="https://www.youtube.com/embed/g0kXyWS-Ato" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center mt-5">
+        <br><br>
+        BIBLIOTECA NACIONAL<br><br>
+        Dirección: Calle 24 5-60 <br>
+        Horario de Atención: Lunes/Sábados 8 am - 6 pm
+        <br><br>
+    </footer>
+</body>
+
+</html>

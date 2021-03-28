@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquilar libros</title>
+    <script src="../js/js.js"></script>
+    <script src="../js2/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+</head>
+
+<body onload="cargarD()">
+
+    <img src="../img/1.jpg" class="img-rounded mx-auto d-block" width="100%">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alquilerLibros.html">Alquiler de libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprarLibro.html">Compra de libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="iniciar">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="cerrar()" id="cerrarSesion">Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h4 class="text-end" id="nombreU"></h4>
+        <h1 class="text-center text-info">Alquilar libros</h1><br>
+        <p class="parrafo"> Descripción: <br>
+            Conoce los diferentes tipos de libros que la <b>Biblioteca Nacional</b> tiene disponibles para sus usuarios.
+            Aquí podrás: <br>
+        <ol class="parrafo">
+            <li>Alquilar libros<br>
+                <ul>
+                    <li>De todos los géneros.</li><br>
+                    <li>A precios accesibles.</li><br>
+                    <li>De forma rápida.</li><br>
+                </ul>
+            </li>
+            <br>
+            <div class="row">
+                <div class="col-md 12 col-sm-12 col-xl-12 col-12 d-none d-sm-block">
+
+                    <li>Alquilar revistas
+                        <ul>
+                            <li>Compiladas.</li><br>
+                            <li>Ediciones digitalizadas.</li><br>
+                            <li>Algunas obras más importantes.</li><br>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </ol>
+        </p>
+        <br>
+        <div class="row">
+            <div class="col-md 12 col-sm-12 col-xl-12 col-12 d-none d-sm-block">
+
+                <p>Así mismo, podrás consultar nuestras novedades y mantenerte al tanto de las mejores
+                    publicaciones
+                    que podrás tener de manera legal y fácil y conoce las <a href="noticias.html">noticias</a> más
+                    actuales que
+                    maneja la <b>Biblioteca Nacional</b> El material que solicites lo podrás disfrutar por 20 días
+                    calendario
+                    con la
+                    posibilidad de renovarlo una vez a través de nuestro catálogo en línea. <br><br> <b></b> Para
+                    efectuar la
+                    compra
+                    debe seleccionar la catidad de libros que usted desea, si hay un libro que no desea alquilar deje el
+                    campo
+                    vacio</p><br><br>
+            </div>
+        </div><input type="number" id="txtId" class="form-control"><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Libros de Misterio y terror
+
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-6 col-xs-6 text-center">
+                                <h5 class="fw-bold"> Libro 1</h5>
+                                <img src="../img/libro1.jpg" class="rounded mx-auto d-block img-fluid  w-0 h-25">$30.000
+                                <br><br>
+                                <label class="fw-bold">Cantidad de libros a alquilar</label>
+                                <input type="number" id="txt1" class="mb-5 form-control" value="0"> <br>
+
+                                <h5 class="fw-bold"> Libro 3</h5>
+                                <img src="../img/libro2.jpeg"
+                                    class="rounded mx-auto d-block img-fluid    w-0 h-25">$30.000
+                                <br> <br>
+                                <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt2" class="mb-5 form-control" value="0">
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-6 col-xs-6 text-center">
+                                <h5 class="fw-bold"> Libro 2</h5>
+                                <img src="../img/libro3-1.jpg"
+                                    class="rounded mx-auto d-block img-fluid  w-0 h-25">$30.000
+                                <br> <br>
+                                <label class="fw-bold"> Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt3" class="mb-5 form-control" value="0"><br>
+
+                                <h5 class="fw-bold"> Libro 4</h5>
+                                <img src="../img/libro3.jpg" class="rounded mx-auto d-block img-fluid  w-0 h-25">$30.000
+                                <br><br>
+                                <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt4" class="mb-5 form-control" value="0">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Libros de Romance y drama
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-6 col-xs-6 text-center">
+                                <h5 class="fw-bold"> Libro 5</h5>
+                                <img src="../img/libro4.jpg" class="rounded mx-auto d-block img-fluid w-0 h-25">$30.000
+                                <br><br>
+                                <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt5" class="mb-5 form-control" value="0"><br>
+
+                                <h5> Libro 7</h5>
+                                <img src="../img/libro8.jpg" class="rounded mx-auto d-block img-fluid  w-0 h-25">$30.000
+                                <br><br>
+                                <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt6" class="mb-5 form-control" value="0"><br>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-6 col-xs-6 text-center">
+
+                                <h5 class="fw-bold"> Libro 6</h5>
+                                <img src="../img/libro5.jpg" class="rounded mx-auto d-block img-fluid  w-0 h-25">$30.000
+                                <br><br> <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt7" class="mb-5 form-control" value="0"><br>
+
+                                <h5 class="fw-bold"> Libro 8</h5>
+                                <img src="../img/libro9.jpg" class="rounded mx-auto d-block img-fluid  w-0 h-25">$30.000
+                                <br> <br> <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt8" class="mb-5 form-control" value="0"><br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Libros de ingenerias
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-6 col-xs-6 text-center">
+
+                                <h5 class="fw-bold"> Libro 9</h5>
+                                <img src="../img/libro6.jpg" class="rounded mx-auto d-block img-fluid w-0 h-25">$30.000
+                                <br> <br> <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt9" class="mb-5 form-control" value="0"><br>
+                                <h5 class="fw-bold"> Libro 11</h5>
+                                <img src="../img/libro7.jpg" class="rounded mx-auto d-block img-fluid w-0 h-25">$30.000
+                                <br><br>
+                                <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt10" class="mb-5 form-control" value="0"><br>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-6 col-xs-6 text-center">
+                                <h5 class="fw-bold"> Libro 10</h5>
+
+                                <img src="../img/libro10.jpg" class="rounded mx-auto d-block img-fluid w-0 h-25">$30.000
+                                <br> <br> <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt11" class="mb-5 form-control" value="0"><br>
+                                <h5 class="fw-bold"> Libro 12</h5>
+
+                                <img src="../img/libro11.jpg" class="rounded mx-auto d-block img-fluid w-0 h-25">$30.000
+                                <br> <br> <label class="fw-bold">Cantidad de libros a alquilar</label>
+
+                                <input type="number" id="txt12" class="mb-5 form-control" value="0"><br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <input type="button" class="btn btn-dark" onclick="alquilarAlq()" name="alquilar" value="Alquilar">
+            <input type="button" class="btn btn-dark" onclick="editarLibro()" name="Editae" value="Editar">
+            <input type="button" class="btn btn-dark" onclick="eliminarAlqu()" name="Eliminar" value="Eliminar">
+
+            <input type="button" class="btn btn-dark" onclick="mostrarAlq()" name="mostrar" value="Mostrar">
+            <input type="button" class="btn btn-dark" onclick="limpiar()" name="limpiar" value="Limpiar">
+        </div>
+        <br><br>
+        <h4 class="text-center text-info">Cantidad de los libros alquilados</h4>
+
+        <div class="table-responsive">
+            <div id="tabla_datos">
+                <table class="table table-bordered  table-striped" id="listarA">
+                    <tr>
+                        <th> Id</th>
+
+                        <th> 1° libro</th>
+                        <th class="">2° libro</th>
+                        <th class=""> 3° libro</th>
+                        <th class=""> 4° libro</th>
+                        <th class=""> 5° libro</th>
+                        <th class=""> 6° libro</th>
+                        <th class=""> 7° libro</th>
+                        <th class=""> 8° libro</th>
+
+                        <th class=""> 9° libro</th>
+                        <th class=""> 10° libro</th>
+                        <th class=""> 11° libro</th>
+                        <th class=""> 12° libro</th>
+                    </tr>
+                    <tr>
+                        <tbody id="elementosA"></tbody>
+                    </tr>
+                </table>
+
+
+                <br><br>
+            </div>
+        </div>
+        <h4 class="text-center text-info">Subtotal de los libros</h4>
+
+        <div class="table-responsive">
+            <div id="tabla_datos2">
+
+                <table class="table table-bordered  table-striped" id="listarB">
+                    <tr>
+                        <th> Id</th>
+
+                        <th class="">1° libro</th>
+                        <th class="">2° libro</th>
+                        <th class="">3° libro</th>
+                        <th class="">4° libro</th>
+                        <th class="">5° libro</th>
+                        <th class="">6° libro</th>
+                        <th class="">7° libro</th>
+                        <th class="">8° libro</th>
+                        <th class="">9° libro</th>
+                        <th class="">10° libro</th>
+                        <th class="">11° libro</th>
+                        <th class="">12° libro</th>
+
+                        <th class="">Total</th>
+                    </tr>
+                    <tr>
+                        <tbody id="elementosB"></tbody>
+                    </tr>
+                </table>
+
+
+                <br><br>
+            </div>
+        </div>
+
+
+
+        <p><b>Recuerda:</b> que si tienes préstamos puedes devolverlos cuando solicites nuevos
+            libros.
+            Al volver a las bibliotecas, los materiales quedan en cuarentena, si siguen apareciendo en tu cuenta por
+            unos días, es normal <i>¡No te preocupes!</i></p>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xl-12 col-12 d-none d-sm-block">
+                <p> Este nuevo servicio fue avalado por la <a
+                        href="http://www.saludcapital.gov.co/Paginas2/Inicio.aspx">
+                        Secretaría de Salud</a>, así que la
+                    <b>Biblioteca Nacional</b> garantiza que los libros y otros materiales que lleven a tu casa en
+                    préstamo
+                    se
+                    haga con las medidas de salubridad pertinentes.Culaquier duda o inquietud escribenos dando clik <a
+                        href="contacto.html">aquí.</a>
+                </p>
+            </div>
+        </div>
+        <br><br><br>
+
+    </div>
+
+    <br><br>
+    <footer class="bg-dark text-white text-center col-lg-11 col-md-12 col-sm-6 col-xl-12">
+        BIBLIOTECA NACIONAL<br><br>
+        Dirección: Calle 24 5-60 <br>
+        Código postal: 110311<br>
+        Horario de Atención: Lunes/Sábados 8 am - 6 pm <br><br>
+    </footer>
+</body>
+
+</html>

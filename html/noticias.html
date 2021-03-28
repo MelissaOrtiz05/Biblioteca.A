@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias</title>
+  <script src="../js/js.js"></script>
+  <script src="../js2/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+
+<body onload="cargarD()">
+  <div class="fondo">
+    <img src="../img/1.jpg" class="rounded mx-auto d-block img-fluid img-rounded" width="100%">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alquilerLibros.html">Alquiler de libros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comprarLibro.html">Compra de libros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contactenos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" id="iniciar">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" onclick="cerrar()" id="cerrarSesion">Cerrar Sesion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br><br>
+  <div class="container"> <br>
+
+    <h4 class="text-end" id="nombreU"></h4>
+
+    <h1 class="text-center mb-5 text-info">Noticias</h1>
+    <h2 class="text-center m-5 text-info"><u> Señalización de bioseguridad.</u></h2>
+    <div class="row">
+      <div class=" col-lg-6  col-md-6 col-sm-6 col-xl-12 col-xs-12 ">
+        <img src="../img/noticia2.jpg" class="img-fluid" width="650px">
+      </div>
+
+      <div class=" col-lg-6  col-md-6 col-sm-6 col-xl-12 col-12 mb-5">
+        <p class="text-justify mb-4"><br> En el marco de la emergencia sanitaria por COVID-19 decretada por el Gobierno
+          Nacional, la Red Nacional de Bibliotecas Públicas (RNBP) ha elaborado varios documentos y guías con
+          indicaciones para la prestación de los servicios bibliotecarios, el cuidado y protección del
+          personal bibliotecario y los usuarios, la adecuada gestión de los espacios y la continuidad de la
+          oferta de actividades y programas de las bibliotecas públicas en el país.En este marco, la RNBP
+          elaboró un kit de señalización con las normas y orientaciones de bioseguridad y prestación de los
+          servicios para las bibliotecas públicas adecuado para la reapertura de los espacios
+          bibliotecarios.</p>
+        <p class="text-justify mb-4 d-none d-sm-block "> Considerando que a la fecha aún hay en el país un número amplio
+          de bibliotecas que
+          no han retomado
+          la prestación de servicios presenciales y la apertura de sus instalaciones físicas, la <b>Biblioteca
+            Nacional</b> pone a disposición de las administraciones locales este kit que cuenta con carteles
+          que dan indicaciones para el ingreso y permanencia de los ciudadanos en las instalaciones de las
+          bibliotecas, ajustados a los protocolos de bioseguiridad.</p>
+
+      </div>
+    </div>
+
+    <h2 class="text-center mb-5 text-info"><u>Promoción de lectura en canales
+        digitales y
+        remotos</u></h2>
+    <div class="row text-justify">
+      <div class="col-lg-6  col-md-6 col-sm-6 col-xl-12 col-12">
+        <ol class="parrafo">
+          <li class="mb-5">
+            <br><br>
+            Hasta el próximo 27 de febrero estarán abiertas las inscripciones para el primer curso de formación 2021
+            del Aula Virtual de la <b>Biblioteca Nacional de Colombia</b>: Mi biblioteca incluyente.
+          </li>
+          <li class="mb-5">El curso está dirigido a bibliotecarios adscritos a la Red Nacional de Bibliotecas Públicas
+            (RNBP),
+            bibliotecas comunitarias y mediadores de proyectos rurales itinerantes. Inicia el 1º de marzo.
+          </li>
+          <li class="mb-5 d-none d-sm-block">
+            Los programas están dirigidos a bibliotecarios, bibliotecólogos o personas encargadas de la atención a
+            usuarios y la prestación de servicios en bibliotecas públicas, comunitarias, móviles e itinerantes del país.
+          </li>
+        </ol>
+      </div>
+      <div class="col-lg-6  col-md-6 col-sm-6 col-xl-12 col-12">
+        <img src="../img/noticia.jpg" class="rounded mx-auto d-block img-fluid" width="480px">
+      </div>
+    </div>
+
+    <p class="text-justify mb-5">Para seguir brindando elementos teóricos y prácticos que enriquezcan la labor que
+      realizan las
+      bibliotecarias y bibliotecarios de las bibliotecas públicas y otras unidades de información del país, la
+      Biblioteca Nacional de Colombia (BNC) y la Red Nacional de Bibliotecas Públicas (RNBP) abren las inscripciones
+      al primer curso gratuito del 2021, disponible en su Aula Virtual.</p>
+    <p class="text-justify mb-5 d-none d-sm-block"> El programa se realizará del 1º de febrero al 1º de marzo, y tiene
+      un carácter
+      autoformativo, de
+      manera que cada participante deberá hacer el seguimiento y gestionar su propio proceso de aprendizaje. No
+      obstante, el Aula Virtual de la Biblioteca Nacional de Colombia cuenta con un soporte técnico permanente a
+      través del cual se responderán las inquietudes o dudas que se presenten, bien sea con los datos de acceso o
+      acerca del funcionamiento de la plataforma virtual.</p>
+
+
+
+
+    <table class="table-bordered table table-striped">
+      <tr class="text-center">
+        <th>Fecha de inicio</th>
+        <th>Fecha de finalización</th>
+        <th>Cupos disponibles</th>
+      </tr>
+      <tr class="text-center">
+        <td> 1º de Marzo de 2021</td>
+        <td> 1º de Abril de 2021</td>
+        <td>100</td>
+      </tr>
+    </table><br><br>
+    <div class="text-center">
+      <input type="button" onclick="ocultar()" class="btn btn-dark text-white mb-5" value="Ocultar">
+      <input type="button" onclick="mostrar()" class="btn btn-dark text-white mb-5" value="Mostrar">
+
+      <div id="imgN">
+        <img src="../img/noticias.png" alt="">
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center ">
+    <p class="mt-3 mb-4"> <br> BIBLIOTECA NACIONAL</p>
+    <p class="mt-3 mb-4"> Dirección: Calle 24 5-60 </p>
+    Horario de Atención: Lunes/Sábados 8 am - 6 pm
+    <br>
+  </footer>
+</body>
+
+
+</html>
